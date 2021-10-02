@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #ffb1a6;
+}
+
+nav {
+    background-color: #9E542F;
+}
+
+nav a{
+    color: aliceblue;
+    font-weight: 500;
+}
+
+nav strong{
+    color: aliceblue;
+}
+
+header{
+    background-image: url("https://theurbantandoor.com/wp-content/uploads/2019/10/asian-bbq-chicken.jpg");
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+
+header div.text{
+    color: aliceblue;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+header div.addbtn{
+    width: 400px;
+    align: center;
+    margin : 0px auto;
+}
+
+
+
