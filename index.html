@@ -114,62 +114,30 @@
     <main class="container">
         <section>
             <div class="row" id="taskContents">
-                <div class="col-md-6 col-lg-4 mt-3">
-                    <div class="card">
+                <div class="col-md-6 col-lg-4 mt-3" id=${id} key=${id}>
+                    <div class="card" style = "background-color : #ffdad5">
                         <div class="card-header">
                             <div class="d-flex justify-content-between">
-                                <button type="button" class="btn btn-outline-danger"><i
+                                <button type="button" class="btn btn-outline-danger" onclick= "editTask(this)" ><i
                                         class="fas fa-pencil-alt"></i></button>
-                                <button type="button" class="btn btn-outline-danger"><i
-                                        class="fas fa-trash-alt"></i></button>
+                                <button type="button" class="btn btn-outline-danger"  onclick= "deleteTask(this)" ><i class="fas fa-trash-alt"></i></button>
                             </div>
                         </div>
-                        <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" class="card-img-top"
-                            alt="abcd">
+                        <img src="https://media.istockphoto.com/photos/folded-egg-omelets-filled-with-chopped-ham-and-vegetables-picture-id155377745" class="card-img-top" alt="recipe_image" >
                         <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">CHICKEN</h5>
-                            <p class="card-text d-flex justify-content-center">Duration in minutes</p>
-                            <p class="card-text">${ingredients}</p>
-                            <p class="card-text">${steps}</p>
-
+                            <h5 class="card-title d-flex justify-content-center">Omelette</h5>
+                            <p class="card-text d-flex justify-content-center">15-20 minutes</p>
+                            <h6>INGREDIENTS</h6>
+                            <p class="card-text">Eggs</p>
+                            <h6>STEPS</h6>
+                            <p class="card-text">1. Boil the eggs <br><br>
+                            <strong>this is a sample of how the card looks like when you add your own recipes it will be displayed here and all the functionalities will be working accordingly. </strong> </p>
                         </div>
-                        <div class="card-footer">
-                            <button class="btn btn-outline-danger float-end">view Recipe</button>
+                        <div class="card-footer d-flex justify-content-center">
+                            <button class="btn btn-outline-danger"  data-bs-toggle="modal" data-bs-target="#showTask" onclick = "openTask.apply(this, arguments)"  id=${id}>view Recipe</button>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 mt-3">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between">
-                                <button type="button" class="btn btn-outline-danger"><i
-                                        class="fas fa-pencil-alt"></i></button>
-                                <button type="button" class="btn btn-outline-danger"><i
-                                        class="fas fa-trash-alt"></i></button>
-                            </div>
-                        </div>
-                        <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" class="card-img-top"
-                            alt="abcd">
-                        <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">CHICKEN</h5>
-                            <p class="card-text d-flex justify-content-center">Duration in minutes</p>
-
-                            <ul class="list-group card-text"> INGREDIENTS
-                                <li class="list-group-item">onions</li>
-                                <li class="list-group-item">garlic</li>
-                            </ul>
-                            <ul class="list-group card-text"> STEPS
-                                <li class="list-group-item">Boil the chicken</li>
-                                <li class="list-group-item">add water</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-outline-danger float-end">view Recipe</button>
-                        </div>
                     </div>
-                </div>
             </div>
         </section>
     </main>
